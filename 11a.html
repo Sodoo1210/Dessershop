@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Merged Exercises</title>
+  <style>
+    button {
+      margin: 5px;
+      padding: 10px;
+    }
+    iframe {
+      width: 100%;
+      height: 600px;
+      border: 1px solid #ccc;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>HTML Exercises Viewer</h1>
+
+  <div>
+    <button onclick="loadPage('exercise2(homework).html')">Exercise 2 (Homework)</button>
+    <button onclick="loadPage('exercise2.html')">Exercise 2</button>
+    <button onclick="loadPage('exercise3.html')">Exercise 3</button>
+    <button onclick="loadPage('exercise4.html')">Exercise 4</button>
+    <button onclick="loadPage('exercise5.html')">Exercise 5</button>
+    <button onclick="loadPage('exercise6.html')">Exercise 6</button>
+    <button onclick="loadPage('exercise7.html')">Exercise 7</button>
+    <button onclick="loadPage('finalexam Sodnaran.html')">Final Exam</button>
+    <button onclick="loadPage('sigmaboy3.html')">Sigmaboy3</button>
+  </div>
+
+  <iframe id="viewer" src="" title="Exercise Viewer"></iframe>
+
+  <script>
+    function loadPage(page) {
+      document.getElementById('viewer').src = page;
+    }
+  </script>
+</body>
+</html>
